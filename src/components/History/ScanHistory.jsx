@@ -1,6 +1,6 @@
 import { QRCodeSVG } from 'qrcode.react';
 import { SCAN_DATA } from '../../constans';
-import s from './dddhistory.module.css';
+import s from './history.module.css';
 import { fgColor } from '../../interface';
 
 export const ScanHistory = () => {
