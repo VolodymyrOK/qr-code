@@ -11,7 +11,7 @@
   text-align: center;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 360px) {
   .title {
     margin: 100px 0 0;
   }
