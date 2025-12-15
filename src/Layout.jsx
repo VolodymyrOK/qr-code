@@ -7,22 +7,31 @@ import { GenerateHistory } from './components/History/GenerateHistory';
 import { HomePage } from './components/HomePage/HomePage';
 import { Footer } from './components/Footer/Footer';
 import s from './layout.module.css';
+import bgImage from './images/funart.jpg';
 
 export const Layout = () => {
   return (
-    <div className={s.container}>
-      <Navigation />
-      <div className={s.grow}>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/qr-code" element={<HomePage />} />
-          <Route path="/generate" element={<QrCodeGenerator />} />
-          <Route path="/scan" element={<QrCodeScanner />} />
-          <Route path="/scanHistory" element={<ScanHistory />} />
-          <Route path="/generateHistory" element={<GenerateHistory />} />
-        </Routes>
+    <div
+      style={{
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: 'cover',
+        height: '100vh',
+      }}
+    >
+      <div className={s.container}>
+        <Navigation />
+        <div className={s.grow}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/qr-code" element={<HomePage />} />
+            <Route path="/generate" element={<QrCodeGenerator />} />
+            <Route path="/scan" element={<QrCodeScanner />} />
+            <Route path="/scanHistory" element={<ScanHistory />} />
+            <Route path="/generateHistory" element={<GenerateHistory />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };
