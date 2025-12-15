@@ -4,17 +4,25 @@ import { QrCodeGenerator } from './components/Generate/QrCodeGenerator';
 import { QrCodeScanner } from './components/Scan/QrCodeScanner';
 import { ScanHistory } from './components/History/ScanHistory';
 import { GenerateHistory } from './components/History/GenerateHistory';
+import { HomePage } from './components/HomePage/HomePage';
+import { Footer } from './components/Footer/Footer';
+import s from './layout.module.css';
 
 export const Layout = () => {
   return (
-    <div>
+    <div className={s.container}>
       <Navigation />
-      <Routes>
-        <Route path="/generate" element={<QrCodeGenerator />} />
-        <Route path="/scan" element={<QrCodeScanner />} />
-        <Route path="/scanHistory" element={<ScanHistory />} />
-        <Route path="/generateHistory" element={<GenerateHistory />} />
-      </Routes>
+      <div className={s.grow}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/qr-code" element={<HomePage />} />
+          <Route path="/generate" element={<QrCodeGenerator />} />
+          <Route path="/scan" element={<QrCodeScanner />} />
+          <Route path="/scanHistory" element={<ScanHistory />} />
+          <Route path="/generateHistory" element={<GenerateHistory />} />
+        </Routes>
+      </div>
+      <Footer />
     </div>
   );
 };

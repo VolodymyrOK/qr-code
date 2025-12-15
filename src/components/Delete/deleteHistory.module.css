@@ -1,25 +1,13 @@
-.container {
-  display: flex;
-  justify-content: center;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-  gap: 30px;
-  font-size: 16px;
-  text-align: center;
-}
-
 .button {
-  border: 1px color black;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
   background-color: #fff;
   border-radius: 12px;
   padding: 5px 16px;
   color: darkblue;
   transition: all 0.1s ease-out;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(226, 226, 226, 0.1);
 }
 
 .button:hover {

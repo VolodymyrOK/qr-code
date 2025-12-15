@@ -20,7 +20,7 @@ export const QrCodeScanner = () => {
 
   return (
     <div className={s.container}>
-      <p>Наведите камеру на QR-код</p>
+      <p className={s.title}>Наведите камеру на QR-код</p>
       <Scanner
         allowMultiple={false}
         onScan={scanHandler}

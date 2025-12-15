@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+.title {
+  align-items: center;
+  margin: 180px 0 0;
+  width: 600px;
+
+  color: darkred;
+  text-align: center;
+}

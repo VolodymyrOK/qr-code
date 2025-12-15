@@ -4,7 +4,6 @@
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  height: 100vh;
 }
 
 .result {
@@ -14,4 +13,9 @@
 
 .result a {
   cursor: pointer;
+}
+
+.title {
+  margin-top: 50px;
+  color: darkblue;
 }

@@ -1,5 +1,13 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .history {
-  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   gap: 10px;
