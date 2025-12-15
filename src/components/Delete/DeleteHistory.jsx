@@ -1,18 +1,14 @@
 import s from './deleteHistory.module.css';
 import { GENERATE_DATA, SCAN_DATA } from '../../constans';
+import { useState } from 'react';
 
 export const DeleteHistory = ({ message }) => {
+  const [flag, setFlag] = useState(false);
+
   const deleteHistoryHandler = () => {
-    const deleteData =
-      message === 'GenerateHistory' ? GENERATE_DATA : SCAN_DATA;
-    let textPromt = null;
-    message === 'GenerateHistory'
-      ? (textPromt = 'создания кодов')
-      : (textPromt = 'сканирований');
-    const alert = window.confirm(`Удалить историю ${textPromt}?`);
-    if (alert) {
-      localStorage.removeItem(deleteData);
-    }
+    localStorage.removeItem(
+      message === 'GenerateHistory' ? GENERATE_DATA : SCAN_DATA
+    );
   };
 
   return (

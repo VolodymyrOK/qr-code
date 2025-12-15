@@ -1,5 +1,4 @@
 import s from './homePage.module.css';
-console.log(s.title);
 
 export const HomePage = () => {
   return (

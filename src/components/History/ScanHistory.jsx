@@ -8,7 +8,6 @@ const message = 'ScanHistory';
 
 export const ScanHistory = () => {
   const data = JSON.parse(localStorage.getItem(SCAN_DATA) || '[]');
-  console.log(data);
   return (
     <div>
       <DeleteHistory message={message} />
@@ -16,7 +15,11 @@ export const ScanHistory = () => {
         {data.map((text, i = 0) => (
           <p key={++i} className={s.history}>
             <QRCodeSVG value={text} size={100} fgColor={fgColor} />
-            {text}
+            {
+              <a href={text} target="_blank">
+                {text}
+              </a>
+            }
           </p>
         ))}
       </div>

@@ -15,7 +15,7 @@ export const Layout = () => {
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: 'cover',
-        height: '100vh',
+        minHeight: '100vh',
       }}
     >
       <div className={s.container}>

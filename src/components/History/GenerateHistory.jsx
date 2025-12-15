@@ -3,18 +3,12 @@ import { GENERATE_DATA } from '../../constans';
 import s from './history.module.css';
 import { fgColor } from '../../interface';
 import { DeleteHistory } from '../Delete/DeleteHistory';
+import { useState } from 'react';
 
 const message = 'GenerateHistory';
 
 export const GenerateHistory = () => {
   const data = JSON.parse(localStorage.getItem(GENERATE_DATA) || '[]');
-
-  const deleteHistoryHandler = () => {
-    if (data) {
-      localStorage.removeItem(GENERATE_DATA);
-    }
-  };
-
   return (
     <div>
       <DeleteHistory message={message} />

@@ -19,3 +19,12 @@
   margin-top: 50px;
   color: darkblue;
 }
+
+@media (max-width: 412px) {
+  .title {
+    margin-top: 35px;
+  }
+  p {
+    margin-left: 8px;
+  }
+}
