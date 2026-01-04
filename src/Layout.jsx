@@ -1,13 +1,13 @@
-import { Routes, Route } from 'react-router-dom';
-import { Navigation } from './components/Navigation/Navigation';
-import { QrCodeGenerator } from './components/Generate/QrCodeGenerator';
-import { QrCodeScanner } from './components/Scan/QrCodeScanner';
-import { ScanHistory } from './components/History/ScanHistory';
-import { GenerateHistory } from './components/History/GenerateHistory';
-import { HomePage } from './components/HomePage/HomePage';
-import { Footer } from './components/Footer/Footer';
-import s from './layout.module.css';
-import bgImage from './images/funart.jpg';
+import { Routes, Route } from 'react-router-dom'
+import { Navigation } from './components/Navigation/Navigation'
+import { QrCodeGenerator } from './components/Generate/QrCodeGenerator'
+import { QrCodeScanner } from './components/Scan/QrCodeScanner'
+import { ScanHistory } from './components/History/ScanHistory'
+import { GenerateHistory } from './components/History/GenerateHistory'
+import { HomePage } from './components/HomePage/HomePage'
+import { Footer } from './components/Footer/Footer'
+import s from './layout.module.css'
+import bgImage from './images/funart.jpg'
 
 export const Layout = () => {
   return (
@@ -33,5 +33,5 @@ export const Layout = () => {
         <Footer />
       </div>
     </div>
-  );
-};
+  )
+}
